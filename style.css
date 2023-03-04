@@ -45,8 +45,8 @@ body a {
 .logo a p {
     font-size: 36px;
     font-family: 'Raleway', sans-serif;
-    color: #ffff00;
-    font-weight: 400;
+    color: #fed200;
+    font-weight: 700;
 }
 
 .navbar ul {
@@ -54,17 +54,19 @@ body a {
     gap: 40px;
 }
 
-.navbar ul a li {
+.navbar ul li {
     list-style-type: none;
+}
+
+.navbar ul li a {
     font-weight: 400;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-size: 17px;
 }
 
-.navbar ul li:hover {
+.navbar ul li a:hover {
     color: #ebe8a9;
-    font-weight: 800;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -84,13 +86,13 @@ body a {
 }
 
 .text1 h3 {
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 600;
     font-family: 'Myriad Pro Regular';
 }
 
 .text1 h1 {
-    font-size: 70px;
+    font-size: 111px;
     font-weight: 400;
     font-family: 'Myriad Pro Regular';
 }
@@ -139,7 +141,7 @@ body a {
 }
 
 .service h1 {
-    margin: 160px 0px 50px 0px;
+    margin: 55px 0px 50px 0px;
     font-size: 45px;
 }
 
@@ -148,7 +150,7 @@ body a {
 }
 
 .service p {
-    margin: 0px 0px 130px 0px;
+    margin-bottom: 130px;
     font-size: 20px;
 }
 
@@ -178,7 +180,7 @@ body a {
 }
 
 
-.services_btn:hover .services_see {
+.services_btn:hover .services_see p {
     background-color: rgba(225, 243, 254, 0.9);
     color: #000;
 }
@@ -204,6 +206,12 @@ body a {
 }
 
 .services_see {
+    display: flex;
+    justify-content: center;
+}
+
+.services_see p {
+    width: 50%;
     text-decoration: none;
     color: #fff;
     text-align: center;
@@ -492,6 +500,7 @@ textarea {
     }
 
     .three {
+        margin-bottom: 50px;
         display: grid;
         gap: 30px;
     }
@@ -787,6 +796,10 @@ textarea {
 }
 
 @media only screen and (min-width: 1920px) {
+
+    .text1 h1 {
+        font-size: 111px;
+    }
 
     .slider {
         padding: 0px 65px 0px 325px;
